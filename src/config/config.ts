@@ -1,4 +1,4 @@
-import { Intents } from 'discord.js';
+import { Intents, PartialTypes } from 'discord.js';
 import { config } from 'dotenv';
 import * as path from 'path';
 
@@ -12,7 +12,10 @@ const intents: number[] = [
   Intents.FLAGS.GUILD_MEMBERS,
   Intents.FLAGS.GUILD_MESSAGES,
   Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+  Intents.FLAGS.DIRECT_MESSAGES,
+  Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
 ];
+const partials: PartialTypes[] = ['MESSAGE', 'CHANNEL', 'REACTION'];
 const prefix = '-';
 const activities = [
   `with the ${prefix}help command.`,
@@ -30,4 +33,4 @@ interface Config {
   prefix: string;
 }
 
-export { token, guildId, clientId, intents, prefix, activities, Config };
+export { token, guildId, clientId, intents, prefix, activities, partials, Config };
