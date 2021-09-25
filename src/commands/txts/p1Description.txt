@@ -1,0 +1,14 @@
+**Tipe Data, Variabel, dan Operator**
+
+1.1 Langkah Awal Program
+
+Dalam pemrograman bahasa C struktur sederhana dari kode yang digunakan adalah library (`#include`), `int main()`. Contohnya seperti ini
+
+```C
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!");
+  return 0;
+}
+```

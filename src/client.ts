@@ -14,6 +14,7 @@ class CustomClient extends Client {
 
 interface Command {
   run: (client: CustomClient, msg: Message, args: string[]) => void;
+  aliases?: string[];
 }
 
 export { CustomClient, Command };
