@@ -1,0 +1,24 @@
+**Tata Tertib Laporan**
+
+●   Ukuran kertas A4 dengan margin 4-3-3-3. (Toleransi 0.5)
+●   Spacing 1,5. (Jumlah baris ada 26)
+●   Bersih dan rapi.
+●   Tulis tangan menggunakan bolpoin tinta berwarna biru.
+●   Setiap Laporan yang ditulis tangan harus ditulis judul ditengah
+(Dasar Teori, Hasil Praktikum, Tugas Asistensi)
+●   Boleh menggunakan tipe-x
+●   Untuk kelas IUP semua yang ditulis tangan semua menggunakan bahasa inggris
+●   Rincian laporan dengan urutan:
+    ▪   Cover Praktikum* (Tanggal jangan sampai tidak lengkap & Judul Praktikum UPPERCASE)
+    ▪   Lembar Monitoring*
+        o   Sebelum praktikum mohon diisi tanggal dan judul praktikum
+        o   Setelah asistensi mohon diisi Tanggal ACC, Nama asisten, TTD asisten
+    ▪    Modul Praktikum (Print/Fotocopy)*
+        o   Print bolak balik
+    ▪        Dasar Teori*
+        o   Tidak boleh spasi menjorok kedalam
+        o   Satu lembar full (justify) dan bolak balik
+    ▪   Hasil Praktikum berupa Deskripsi saat mengerjakan praktikum
+    ▪   Tugas Asistensi (source code untuk tugas coding/deskripsi tugas/jawaban pertanyaan asisten)
+●   Laporan praktikum bertanda (*) dikumpulkan sebelum praktikum dimulai
+●   Tidak boleh melakukan plagiarisme

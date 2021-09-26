@@ -1,18 +1,21 @@
-import { Intents } from 'discord.js';
+import { Intents, PartialTypes } from 'discord.js';
 import { config } from 'dotenv';
 import * as path from 'path';
 
 config({ path: path.join(__dirname, '../../.env') });
 
-const token: string = process.env.TOKEN || 'ODkxMjM3NjQyNDkzMTMyODIw.YU7bvA.4iqR6ojalj3Nd4qX2yKkWAGmjKM';
-const guildId: string = process.env.GUILDID || '891260440796094474';
-const clientId: string = process.env.CLIENTID || '891237642493132820';
+const token: string = process.env.TOKEN || 'abcd';
+const guildId: string = process.env.GUILDID || 'abcd';
+const clientId: string = process.env.CLIENTID || 'abcd';
 const intents: number[] = [
   Intents.FLAGS.GUILDS,
   Intents.FLAGS.GUILD_MEMBERS,
   Intents.FLAGS.GUILD_MESSAGES,
   Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+  Intents.FLAGS.DIRECT_MESSAGES,
+  Intents.FLAGS.DIRECT_MESSAGE_REACTIONS,
 ];
+const partials: PartialTypes[] = ['MESSAGE', 'CHANNEL', 'REACTION'];
 const prefix = '-';
 const activities = [
   `with the ${prefix}help command.`,
@@ -30,4 +33,4 @@ interface Config {
   prefix: string;
 }
 
-export { token, guildId, clientId, intents, prefix, activities, Config };
+export { token, guildId, clientId, intents, prefix, activities, partials, Config };
