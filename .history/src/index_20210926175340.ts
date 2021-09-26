@@ -24,7 +24,6 @@ client.once('ready', () => {
 });
 
 client.on('message', msg=>{
-  commands.b201.run(client, msg, ["halo"])
   if(msg.content == "Tata Tertib") {
     msg.channel.send("Perintah yang tersedia \n 1. Tata Tertib Praktikum \n 2. Tata Tertib Laporan Praktikum \n 3. Contoh Laporan Sebelum Praktikum \n 4. Contoh Laporan Lengkap");
   } else if(msg.content == "Tata Tertib Praktikum") {

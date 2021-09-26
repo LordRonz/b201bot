@@ -4,9 +4,9 @@ import * as path from 'path';
 
 config({ path: path.join(__dirname, '../../.env') });
 
-const token: string = process.env.TOKEN || 'ODkxMjM3NjQyNDkzMTMyODIw.YU7bvA.4iqR6ojalj3Nd4qX2yKkWAGmjKM';
-const guildId: string = process.env.GUILDID || '891260440796094474';
-const clientId: string = process.env.CLIENTID || '891237642493132820';
+const token: string = process.env.TOKEN || 'abcd';
+const guildId: string = process.env.GUILDID || 'abcd';
+const clientId: string = process.env.CLIENTID || 'abcd';
 const intents: number[] = [
   Intents.FLAGS.GUILDS,
   Intents.FLAGS.GUILD_MEMBERS,
