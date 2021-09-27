@@ -2,7 +2,7 @@ import { Message } from 'discord.js';
 import { CustomClient, Command } from '../client';
 
 const b201: Command = {
-  run: (_client: CustomClient, message: Message): void => {
+  run: async (_client: CustomClient, message: Message): Promise<void> => {
     message.channel.send('Adalah lab terbaik!');
   },
 };

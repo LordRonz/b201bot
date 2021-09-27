@@ -1,7 +1,7 @@
 import { Message, MessageButton, MessageActionRow } from 'discord.js';
-import { CustomClient, Command } from '../client';
 import { readFileSync } from 'fs';
 import { join } from 'path';
+import { CustomClient, Command } from '../client';
 
 const author = {
   name: 'B201Lab',
@@ -51,19 +51,14 @@ const contohLaporanLengkap = {
   timestamp: new Date(),
 };
 
-
 const row = new MessageActionRow().addComponents(
   new MessageButton().setCustomId('praktikum').setLabel('Praktikum').setStyle('PRIMARY'),
   new MessageButton().setCustomId('laporan').setLabel('Laporan').setStyle('PRIMARY'),
   new MessageButton().setCustomId('contoh-laporan-prapraktikum').setLabel('Laporan Pra Praktikum').setStyle('PRIMARY'),
-  new MessageButton().setCustomId('contoh-laporan-lengkap-praktikum').setLabel('Laporan Lengkap Praktikum').setStyle('PRIMARY')
-);
-
-const rowDisabled = new MessageActionRow().addComponents(
-  new MessageButton().setCustomId('praktikum').setLabel('Praktikum').setStyle('PRIMARY'),
-  new MessageButton().setCustomId('laporan').setLabel('Laporan').setStyle('PRIMARY'),
-  new MessageButton().setCustomId('contoh-laporan-prapraktikum').setLabel('Laporan Pra Praktikum').setStyle('PRIMARY'),
-  new MessageButton().setCustomId('contoh-laporan-lengkap-praktikum').setLabel('Laporan Lengkap Praktikum').setStyle('PRIMARY')
+  new MessageButton()
+    .setCustomId('contoh-laporan-lengkap-praktikum')
+    .setLabel('Laporan Lengkap Praktikum')
+    .setStyle('PRIMARY')
 );
 
 const tatatertib: Command = {
@@ -86,13 +81,19 @@ const tatatertib: Command = {
       }
     });
 
-    const msg = await message.channel.send({ embeds: [tatatertibEmbed], components: [row] });
+    let msg = await message.channel.send({ embeds: [tatatertibEmbed], components: [row] });
 
-    collector.on('end', () => {
-      msg.edit({ embeds: [tatatertibEmbed], components: [rowDisabled] });
+    collector.on('end', async () => {
+      msg = await msg.fetch();
+      msg.components.forEach((messageActionRow) => {
+        messageActionRow.components.forEach((component) => {
+          component.setDisabled();
+        });
+      });
+      msg.edit({ embeds: msg.embeds, components: msg.components });
     });
   },
-  aliases: ['tatatertib'],
+  aliases: ['tatib'],
 };
 
 export default tatatertib;

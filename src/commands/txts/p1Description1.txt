@@ -1,0 +1,17 @@
+**Tipe Data, Variabel, dan Operator**
+
+1.2 Tipe Data
+
+Tipe data adalah jenis data dan ukuran data yang akan ditampung dan oleh variabel
+(atau objek secara umum). Tipe data menentukan tipe dan jenis data seperti apa
+yang akan dimiliki oleh suatu variabel. Bahasa C mempunyai beberapa tipe data,
+berikut merupakan tipe data dasar dalam bahasa C:
+
+● lnteger - Merupakan bilangan bulat yang tidak mempunyai nilai pecahan
+(real). Dalam pemrograman bahasa C syntax yang digunakan untuk
+mengunakan integer adalah “int”
+● Floating point numbers - merupakan bilangan real (bilangan yang
+mempunyai desimal). Dalam pemrograman bahasa C syntax yang
+digunakan untuk mengunakan integer adalah “float”
+● Char - merupakan tipe data yang berisi 1 huruf atau 1 karakter. 1 Karakter disini adalah representasi ASCII dari bilangan yang disimpan didalam variabel ini. Syntaxnya adalah "char"
+● Double - merupakan tipe data sama seperti float, namun double memiliki ukuran penyimpanan yang lebih besar dibandingkan float. Syntaxnya adalah "double"

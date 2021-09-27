@@ -1,0 +1,24 @@
+**Tipe Data, Variabel, dan Operator**
+
+1.5 Operator
+
+Operator adalah sesuatu yang dapat melakukan operasi pada operan (variabel/nilai).
+Contohnya, operator + digunakan untuk operasi penjumlahan. Dilihat dari
+kegunaannya, berikut adalah jenis-jenis operator pada bahasa C :
+
+● Operator Assignment
+Operator assignment digunakan untuk mengisikan (assign) sebuah nilai ke
+variabel. Simbol yang biasa digunakan adalah tanda sama dengan =.
+Contohnya :
+```C
+int x = 4, y = 3;
+x = x + y; // x = 7
+y = x + x; // y = 14
+```
+
+● Operator Aritmatika
+Seperti namanya, operator aritmatika melakukan operasi layaknya pada
+matematika seperti penjumlahan, pengurangan, pembagian dsb. Beberapa
+operator menggunakan simbol yang sama pada matematika (penjumlahan
+dengan simbol ‘+’, pengurangan dengan ‘-‘, dst.). Operator-operator aritmatika
+pada bahasa C adalah sebagai berikut.
