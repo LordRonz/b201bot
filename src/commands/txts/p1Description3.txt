@@ -1,0 +1,31 @@
+**Tipe Data, Variabel, dan Operator**
+
+1.4 Input dan output
+
+Input adalah sesuatu data yang kita masukan ke dalam program. Input biasanya
+diambil dari perangakat inputan seperti keyboard. Pada pemrograman bahasa C
+fungsi input menggunakan Fungsi scanf() adalah fungsi untuk mengambil input dari
+keyboard.
+Output adalah informasi yang dihasilkan setelah dilakukan proses. Output
+biasanya ditampilkan ke layar komputer. Fungsi printf() merupakan fungsi untuk
+menampilkan output ke layar komputer.
+Contoh untuk menggunakan input dan output
+
+```C
+#include <stdio.h>
+
+int main() {
+    int angka;
+    scanf("%d", &angka);
+    // %d diatas dikhususkan untuk integer desimal
+    printf("%d\n", angka);
+}
+```
+Maka saat di run akan ada console yang menampilkan angka sesuai yang kita
+inputkan contoh input angka 10 dan akan keluar angka 10
+
+```Bash
+./program
+10
+10
+```

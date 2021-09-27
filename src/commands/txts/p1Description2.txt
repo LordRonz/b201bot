@@ -1,0 +1,25 @@
+**Tipe Data, Variabel, dan Operator**
+
+1.3 Variabel
+
+Variabel digunakan untuk menyimpan nilai yang bisa diubah – ubah pada memori
+Pada bahasa C, variabel menyimpan data/nilai dengan tipe data tertentu. Seperti
+halnya variabel yang menyimpan bilangan bulat (integer). Pada bahasa C, variabel
+harus dideklarasikan terlebih dahulu sebelum bisa digunakan. Setelah
+dideklarasikan, variabel dapat diisi oleh sebuah nilai. Untuk melakukannya, yakni
+dengan menggunakan operator assignment (simbol =). Deklarasi dan pengisian
+nilai pada variabel dapat dilakukan dalam satu instruksi sekaligus. Hal ini disebut
+dengan inisialisasi. Dengan melakukan inisialisasi variabel, berarti kita
+memberikan nilai awal pada variabel tersebut. Untuk lebih jelasnya dapat dilihat
+pada potongan kode berikut:
+
+```C
+int a; //Deklarasi 1 variable integer
+float g; //Deklarasi 1 variable integer
+
+int b,c; //Deklarasi multi variable integer
+float e,f; //Deklarasi multi variable float
+b = 1; //Pengisian nilai pada variable
+int d = 2; // Inisialisasi pada variable integer
+float h = 1; // Inisialisasi pada variable float
+```

@@ -1,5 +1,6 @@
 import { Message } from 'discord.js';
 import { CustomClient } from '../client';
+import logger from '../config/logger';
 
 const messageCreate = (client: CustomClient, msg: Message): void => {
   // Ignore all bots
@@ -22,7 +23,9 @@ const messageCreate = (client: CustomClient, msg: Message): void => {
   if (!cmd) return;
 
   // Run the command
-  cmd.run(client, msg, args);
+  cmd.run(client, msg, args).catch((e) => {
+    logger.error(e);
+  });
 };
 
 export default messageCreate;

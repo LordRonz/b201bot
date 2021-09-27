@@ -13,7 +13,7 @@ class CustomClient extends Client {
 }
 
 interface Command {
-  run: (client: CustomClient, msg: Message, args: string[]) => void;
+  run: (client: CustomClient, msg: Message, args: string[]) => Promise<void>;
   aliases?: string[];
 }
 
