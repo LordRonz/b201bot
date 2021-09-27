@@ -58,7 +58,7 @@ const materiEmbed = {
 const p1Embed = {
   color: 0xff0000,
   title: 'Modul P1 Perkenalan',
-  url: 'https://discord.js.org',
+  url: 'https://drive.google.com/file/d/1NXAidMXP8IcqpODPsoRI_QmHt35B0Q1c/view',
   author,
   description: readFileSync(join(__dirname, '/txts/p1Description.txt'), 'utf-8'),
   timestamp: new Date(),
