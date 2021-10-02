@@ -1,0 +1,26 @@
+**Percabangan**
+
+2.1 Operator Relasional
+
+Operator relasional digunakan untuk memeriksa relasi dan membandingkan nilai dari dua operan. Jika benar akan menghasilkan nilai TRUE (direpresentasikan angka 1), jika salah maka akan menghasilkan nilai FALSE (direpresentasikan angka 0). Berikut adalah operator relasional dalam bahasa C.
+
+```C
+// Sama dengan
+5 == 2 // false
+69 == 69 // tru
+// Tidak sama dengan
+69 != 2 // true
+15 != 15 // false
+// Lebih besar
+69 > 76 // true
+69 > 96 // false
+// Lebih kecil
+5 < 69 // true
+42 < 12 // false
+// Lebih besar sama dengan
+69 >= 69 // true
+30 >= 69 // false
+// Lebih kecil sama dengan
+38 <= 69 // true
+70 <= 69 // false
+```

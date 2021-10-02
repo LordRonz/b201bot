@@ -1,0 +1,37 @@
+**Percabangan**
+
+2.5 Pernyataan if-else Bertingkat
+
+Pernyataan if ... else dapat dibuat secara bertingkat sesuai dengan kebutuhan penggunaannya pada program.
+
+Sintaks yang digunakan dalam percabangan menggunakan if-else if adalah sebagai berikut.
+
+```C
+if(<Ekspresi/Kondisi>) {
+    // Kode yang akan dieksekusi jika kondisi bernilai 1
+} else if(<Ekspresi/Kondisi>) {
+    // Kode yang akan dieksekusi jika kondisi sebelumnya bernilai 0 dan kondisi ini bernilai 1
+}
+```
+Cara kerja percabangan if-else bertingkat yaitu memeriksa kondisi dalam if.
+
+● Jika kondisi tersebut bernilai TRUE (1), Program akan menjalankan kode di dalam bracket if.
+● Apabila kondisi pertama tidak memenuhi, maka ia akan memeriksa kondisi didalam else if, apabila bernilai TRUE (1), maka ia akan menjalankan perintah dalam bracket tersebut, apabila tidak maka ia akan menjalankan sequence selanjutnya.
+● Apabila kita menyediakan statement else di akhir, maka ketika seluruh kondisi if dan else if tidak memenuhi atau FALSE (0), maka secara otomatis ia akan menjalankan perintah di dalam else tersebut.
+
+Contoh dari pernyataan if-else bercabang adalah,
+
+```C
+int a = -69;
+if (a > 0) {
+    printf("Nilai a positif\n");
+} else if (a < 0) {
+    printf("Nilai a negatif\n");
+} else {
+    printf("Nilai a nol\n");
+}
+```
+Output
+```bash
+Nilai a negatif
+```

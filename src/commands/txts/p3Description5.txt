@@ -1,0 +1,23 @@
+**Perulangan**
+
+3.4.2 Continue
+
+Kebalikan dari perintah break, perintah continue digunakan untuk **melanjutkan perulangan**. Pada perulangan, apabila menemui perintah continue, maka perintah-perintah di bawah continue akan **diabaikan** dan **kembali akan mengevaluasi ekspresi/kondisi**. Sedangkan pada perulangan for akan langsung mengeksekusi bagian end_statement kemudian mengevaluasi ekspresi/kondisi.
+
+Berikut adalah contoh pernyataan continue:
+
+```C
+int n = 0;
+while(n < 69) {
+    n++;
+    // cek apakah n ganjil
+    if (n & 1) {
+        // kembali ke awal while jika ganjil
+        continue;
+    }
+    // kode ini akan dieksekusi hanya jika n genap
+    printf("Bilangan %d adalah genap\n", n);
+}
+```
+
+Pada kode tersebut, continue menyebabkan perintah printf dilewati ketika nilai n ganjil dan kode akan langsung kembali mengevaluasi ekspresi/kondisi pada while.

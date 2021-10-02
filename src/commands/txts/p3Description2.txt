@@ -1,0 +1,32 @@
+**Perulangan**
+
+3.1.2 Pernyataan for
+
+Perulangan menggunakan for pada bahasa C memungkinkan untuk menjalankan sejumlah kode selama beberapa kali. Perulangan for membutuhkan sebuah variabel iterator, biasanya digunakan notasi i, tetapi bisa juga menggunakan nama variabel lain. Dalam perulangan for digunakan operator ++ disebut dengan operator increment atau operator -- merupakan operator decrement. Kedua operator ini digunakan untuk menambah (increment)/mengurangi (decrement) nilai dari suatu variabel sebanyak satu. Terdapat dua cara untuk menggunakan operator ini. Sintaks untuk pernyataan for adalah sebagai berikut:
+
+```C
+for(init_statement; kondisi/ekspresi; end_statement) {
+    // Kode yang diulang
+}
+```
+
+Cara kerjanya adalah sebagai berikut :
+
+● Bagian init_statement digunakan untuk inisialisasi variabel yang akan digunakan dalam perulangan. Bagian ini hanya dijalankan sekali saka pada saat awal perulangan.
+● Selanjutnya kondisi/ekspresi akan dievaluasi. Jika menghasilkan TRUE, maka akan mengeksekusi potongan kode. Jika menghasilkan FALSE, perulangan berhenti.
+● Setelah potongan kode selesai dieksekusi, akan mengeksekusi bagian end_statement. Biasanya bagian ini digunakan sebagai increment/decrement.
+● Lalu akan mengevaluasi ekspresi/kondisi lagi, dan begitu seterusnya.
+
+Contohnya jika diinginkan menjalankan sejumlah kode program 69 kali:
+
+```C
+for(int i = 0; i < 69; ++i) {
+    printf("%d\n", i);
+}
+```
+Cara kerja kode diatas yaitu:
+1. Awalnya i bernilai 0.
+2. For statement akan memeriksa nilai i apakah kurang dari 69.
+3. Apabila TRUE maka jalankan kode dalam for block, yakni print nilai i.
+4. Setelah command dalam block for selesai dijalankan, maka variabel i akan diincrement (menggunakan operator increment jadi nilai i bertambah 1), dan di periksa lagi.
+5. Apabila i kurang dari 69, maka command dalam block dieksekusi, apabila tidak maka for loop akan berhenti.

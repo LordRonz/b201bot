@@ -1,0 +1,7 @@
+**Perulangan**
+
+3.1 Perulangan
+
+Perulangan atau looping memungkinkan kita untuk mengeksekusi potongan kode
+berulang-ulang hingga mencapai suatu kondisi. Ada 2 jenis perulangan dalam
+bahasa C, yaitu while dan for.

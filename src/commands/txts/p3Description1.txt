@@ -1,0 +1,36 @@
+**Perulangan**
+
+3.1.1 Pernyataan while
+
+Perulangan menggunakan while mirip dengan perulangan for, tetapi memiliki fungsi yang lebih sedikit. Perulangan while akan terus mengeksekusi sejumlah kode selama kondisi dari while terpenuhi. Sintaksnya adalah sebagai berikut:
+
+```C
+int i = 0;
+while(i < 69) {
+    printf("%d\n", i);
+    i++;
+}
+```
+
+Cara kerja perulangan while mirip dengan if. Jika pada if potongan kode akan dieksekusi sekali saja apabila ekspresi/kondisi bernilai TRUE, pada while potongan kode akan terus dieksekusi hingga ekspresi/kondisi menghasilkan FALSE. Contohnya jika diinginkan menjalankan sejumlah kode program 10 kali:
+
+```C
+int n = 0;
+while(n < 10) {
+    ++n;
+}
+```
+Sehingga pada contoh diatas :
+1. Pada awalnya, variabel n bernilai 0.
+2. Sequence selanjutnya adalah while, dan n bernilai kurang dari 10 (TRUE), maka kode didalam while akan dijalankan, yakni n++.
+3. Setelah melakukan increment, kembali ke statement while untuk memeriksa apakah n masih kurang dari 10 setelah diincrement
+4. Karena setelah n di-increment nilainya masih 1 dan kurang dari 10, maka while akan dijalankan lagi hingga n bernilai 10 yang berarti tidak memenuhi kondisi while.
+
+Perulangan while akan mengeksekusi kode selama-lamanya, jika kondisi dari
+while selalu benar (true / tidak nol):
+
+```C
+while(1) {
+    printf("69");
+}
+```
