@@ -1,0 +1,18 @@
+**Perulangan**
+
+3.4.1 Break
+
+Perintah break digunakan untuk menghentikan perulangan (secara paksa). Apabila perintah break pada suatu perulangan dijalankan, maka perulangan tersebut akan **dihentikan (secara paksa) dari titik dimana perintah break muncul.**
+Berikut adalah contoh pernyataan break:
+
+```C
+int n = 0;
+while(1) {
+    n++;
+    if (n >= 69) {
+        break;
+    }
+}
+```
+
+Pada kode tersebut, break akan menghentikan perulangan setelah 69 kali iterasi, walaupun kondisi dari perulangan while masih terpenuhi.

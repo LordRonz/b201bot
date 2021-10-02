@@ -1,0 +1,34 @@
+**Percabangan**
+
+2.3 Pernyataan if
+
+Pada model pernyataan if, sebuah aksi akan dikerjakan jika syarat yang diajukan
+bernilai benar.
+
+
+Sintaks yang digunakan dalam percabangan menggunakan if adalah sebagai
+berikut.
+
+```C
+if(<Ekspresi/Kondisi>) {
+    // Kode yang akan dieksekusi jika kondisi bernilai 1
+}
+```
+Cara kerja percabangan if yaitu memeriksa dan mengevaluasi suatu kondisi untuk menentukan apakah instruksi selanjutnya dalam bracket akan dijalankan atau tidak oleh program.
+
+● Jika kondisi tersebut bernilai TRUE (1), kode yang di dalam bracket akan
+dieksekusi.
+● Sebaliknya jika kondisi tersebut bernilai FALSE (0), kode yang di dalam bracket tidak akan dieksekusi.
+
+Contoh dari pernyataan if adalah,
+
+```C
+int a = 5;
+if (a > 0) {
+    printf("Nilai a positif\n");
+}
+```
+Output
+```bash
+Nilai a positif
+```

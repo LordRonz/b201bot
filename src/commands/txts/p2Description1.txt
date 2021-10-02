@@ -1,0 +1,32 @@
+**Percabangan**
+
+2.2 Operator Logika
+
+Operator logika digunakan untuk melakukan tes pada kondisi/ekspresi, apakah kondisi tersebut benar atau salah. Operator logika hanya akan menghasilkan nilai TRUE (jika benar) atau FALSE (jika salah). TRUE direpresentasikan oleh angka 1, sedangkan FALSE oleh angka 0. Operator-operator logika dalam bahasa C adalah sebagai berikut.
+
+```C
+// Logical NOT
+!1 == 0
+!0 == 1
+// Logical AND
+1 && 1 == 1
+0 && 1 == 0
+1 && 0 == 0
+0 && 0 == 0
+// Logical OR
+1 || 1 == 1
+0 || 1 == 1
+1 || 0 == 1
+0 || 0 == 0
+```
+Operator logika pada umumnya digunakan bersamaan dengan operator relasional
+untuk melakukan tes pada ekspresi yang berhubungan dengan kebenaran suatu
+kondisi. Penggunaan paling umum adalah untuk melakukan percabangan (akan
+dipelajari di bagian selanjutnya). Contoh:
+
+```C
+int a = 11, b = 24, c = 11, d;
+d = ((a == c) && (b > a));              // 1 (TRUE)
+d = ((a >= b) || (a < c));              // 0 (FALSE)
+d = ((b != b) || (b > c)) && (c == a);  // 1 (TRUE)
+```

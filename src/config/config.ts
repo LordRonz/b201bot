@@ -25,6 +25,19 @@ const activities = [
   'with Python',
 ];
 
+const author = {
+  name: 'B201Lab',
+  icon_url:
+    'https://lh3.googleusercontent.com/proxy/rzGmZBrM8c9nSWUOGdF5fjf9v3AGJrHZMf1v06n0GpcyUNFSdgzHdjZe--eW3jz0RmbIq9HVE2eeF3zU7eXLn6apGmXKn4Oe',
+  url: 'http://b201.telematics.its.ac.id/',
+};
+
+const footer = {
+  text: 'B201 Labs',
+  icon_url:
+    'https://lh3.googleusercontent.com/proxy/56ZtgToeHkXeLekVWjVXjncBFYcf1y3J3qWG1OURKCEJ81SUsxQXdIvFzoleo2Tz75H6P-D90HH6RFFphkB4dwvVWRqclYoa',
+};
+
 interface Config {
   token: string;
   guildId: string;
@@ -33,4 +46,4 @@ interface Config {
   prefix: string;
 }
 
-export { token, guildId, clientId, intents, prefix, activities, partials, Config };
+export { token, guildId, clientId, intents, prefix, activities, partials, author, footer, Config };

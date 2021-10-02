@@ -1,0 +1,43 @@
+**Percabangan**
+
+2.6 Pernyataan switch case
+
+Selain penggunaan statemen if untuk memilih diantara banyak alternatif, terdapat pula statemen switch yang memiliki fungsi yang sama, untuk memilih diantara banyak alternatif berdasarkan sebuah kondisi. Kondisi pada statemen switch berisi ekspresi yang dapat menggunakan sebuah variabel tunggal bertipe int yang akan diperiksa nilainya di setiap blok case.
+
+Sintaks untuk Switch Case:
+
+```C
+switch(ekspresi) {
+    case ekspresi-konstan:
+        statement;
+        break;
+    case ekspresi2-konstan2:
+        statement2;
+        break;
+    // anda bisa memiliki jumlah case sebanyak mungkin
+    // default ketika tidak ada case yang memenuhi
+    default:
+        statement-default;
+}
+```
+Setiap blok, case harus ditambahkan statement break, karena apabila tidak maka ia akan tetap menjalankan blok case di bawahnya hingga bertemu break lain atau pada akhir blok switch.
+
+```C
+switch(kode_plat) {
+    case 'L':
+        printf("Surabaya\n");
+        break;
+    case 'B':
+        printf("Jakarta\n");
+        break;
+    case 'D':
+        printf("Bandung\n");
+        break;
+    case 'N':
+        printf("Ngalam\n");
+        break;
+    default:
+        printf("ASGARD\n");
+}
+```
+Dalam contoh diatas, ekspresi yang digunakan adalah Plat Nomor, dimana case-case nya adalah, huruf plat nomor tersebut, L,B,D,N, dan sebagainya.

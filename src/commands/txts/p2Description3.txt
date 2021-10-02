@@ -1,0 +1,33 @@
+**Percabangan**
+
+2.4 Pernyataan if-else
+
+Sintaks yang digunakan dalam percabangan menggunakan if-else adalah
+sebagai berikut.
+
+```C
+if(<Ekspresi/Kondisi>) {
+    // Kode yang akan dieksekusi jika kondisi bernilai 1
+} else {
+    // Kode yang akan dieksekusi jika kondisi bernilai 0
+}
+```
+Cara kerja percabangan if-else diatas yaitu memeriksa kondisi dalam if.
+
+● Jika kondisi tersebut bernilai TRUE (1), Program akan menjalankan kode di dalam bracket if.
+● Sebaliknya jika kondisi tersebut bernilai FALSE (0), kode di dalam bracket else yang akan dijalankan.
+
+Contoh dari pernyataan if else adalah,
+
+```C
+int a = -5;
+if (a > 0) {
+    printf("Nilai a positif\n");
+} else {
+    printf("Nilai a tidak positif\n");
+}
+```
+Output
+```bash
+Nilai a negatif
+```
