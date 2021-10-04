@@ -1,8 +1,13 @@
+import express from 'express';
 import { CustomClient } from './client';
 import { token, intents, activities, partials } from './config/config';
 import logger from './config/logger';
 import * as events from './events';
 import * as commands from './commands';
+
+const app = express();
+app.get('/', (req, res) => res.send('Hello World!'));
+app.listen(3000);
 
 const client: CustomClient = new CustomClient({ intents, partials });
 
