@@ -31,7 +31,6 @@ const materiEmbed = {
       value: '[Array dan Fungsi](https://drive.google.com/file/d/10q-FsVY5N8YOAvccaiYGO7CTqbZimKKe/view)',
     },
   ],
-  timestamp: new Date(),
   footer,
 };
 
